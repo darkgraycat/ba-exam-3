@@ -1,0 +1,98 @@
+.about {
+  
+  margin-bottom: 100px;
+
+  &__icons {
+    margin: 0 auto;
+    margin-top: 10rem;
+  }
+  
+  &__product {
+    margin: 0 auto;
+    margin-top: 10rem;
+  }
+  
+  .icons {
+    @include flex(column, center, center);
+    gap: 20px;
+    background: url('../img/about_border.png') no-repeat center;
+    background-size: cover;
+    width: 700px;
+    height: 200px;
+    overflow: hidden;
+    &__title {
+      font-size: 24px;
+      letter-spacing: 5px;
+      color: #1c1c1b;
+      font-weight: 400;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &__img {
+      max-width: 100%;
+    }
+  }
+
+  .tabs {
+    &__links {
+      border-bottom: 3px solid #ced6af;
+      margin-bottom: 80px;
+      @include flex(row, flex-start, center);
+      gap: 10rem;
+    }
+
+    &__link {
+      font-size: 3rem;
+      letter-spacing: .6rem;
+      color: #1c1c1b;
+      font-weight: 400;
+      text-align: center;
+      border: 0;
+      outline: 0;
+      background: 0;
+      margin: -1px;
+      padding: 0;
+      padding-bottom: 20px;
+      margin-bottom: -3px;
+      border-bottom: 3px solid #0000;
+
+      &[active] {
+        border-color: #1c1c1b;
+      }
+    }
+
+    &__content {
+      margin: 0 auto;
+    }
+  }
+
+  .card {
+    &__desc {
+      max-width: 400px;
+    }
+    &__title {
+      font-size: 24px;
+      letter-spacing: 5px;
+      line-height: 40px;
+      color: #000000;
+      font-weight: 400;
+    }
+    &__text {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      line-height: 40px;
+      color: #6e774a;
+      font-weight: 300;
+    }
+    &__imgs {
+      padding-left: 200px;
+      margin-right: -200px;
+      img {
+        display: block;
+        margin-bottom: 30px;
+      }
+      img:last-child {margin-bottom: 0;}
+    }
+  }
+
+}

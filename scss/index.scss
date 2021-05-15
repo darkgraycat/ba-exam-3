@@ -1,0 +1,92 @@
+@import 'flex-grid.scss';
+@import 'normalize.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+
+@mixin flex($d, $j, $a) {
+  display: flex;
+  flex-direction: $d;
+  justify-content: $j;
+  align-items: $a;
+}
+
+@import 'intro.scss';
+@import 'about.scss';
+@import 'feautured.scss';
+@import 'faq.scss';
+@import 'testimonials.scss';
+
+// .intro {display: none;}
+// .about {display: none;}
+// .feautured {display: none;}
+// .faq {display: none;}
+// .testimonials {display: none;}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f8f3;
+
+  font-family: 'Oswald', sans-serif;
+  font-size: 10px;
+
+  @media ($breakpoint-lg) {
+    font-size: 12px;
+  }
+  @media ($breakpoint-md) {
+    font-size: 10px;
+  }
+  @media ($breakpoint-sm) {
+    font-size: 7px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  @media ($breakpoint-lg) {
+    max-width: 1170px;
+  }
+  @media ($breakpoint-md) {
+    max-width: 760px;
+  }
+  @media ($breakpoint-sm) {
+    max-width: 100%;
+  }
+}
+
+.button {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 400;
+  width: 270px;
+  height: 70px;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid #f7f8f3;
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 45px;
+    height: 2px;
+    margin-bottom: 8px;
+    margin-left: 10px;
+    background-color: #f7f8f3;
+  }
+  &:hover {
+
+  }
+}
+
+.link {
+  font-size: 1.8rem;
+  letter-spacing: .5rem;
+  line-height: 7.5rem;
+  color: #f7f8f3;
+  font-weight: 300;
+  text-decoration: none;
+  &::after {
+    content: '\2192';
+    margin-left: 20px;
+  }
+}

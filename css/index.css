@@ -853,6 +853,94 @@ template {
   font-weight: 300;
 }
 
+.footer {
+  margin: 100px auto;
+}
+.footer__links {
+  border-top: 2px solid #6e774a;
+  padding-top: 90px;
+}
+.footer__links a {
+  display: block;
+  font-size: 1.4rem;
+  letter-spacing: 4px;
+  line-height: 40px;
+  color: #6e774a;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.footer__main {
+  margin-top: -3rem;
+  text-align: center;
+}
+.footer__vline {
+  width: 2px;
+  height: 55px;
+  background-color: #6e774a;
+  margin: 40px auto;
+}
+.footer__title {
+  font-size: 6rem;
+  line-height: 55px;
+  color: #6e774a;
+  font-weight: 400;
+}
+.footer__socials {
+  max-width: 200px;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footer .icon-fb {
+  background-image: url("../img/Facebook.png");
+}
+.footer .icon-tw {
+  background-image: url("../img/Twitter.png");
+}
+.footer .icon-yt {
+  background-image: url("../img/YouTube.png");
+}
+.footer .form__title {
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #1c1c1b;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer .form__input {
+  padding: 20px;
+  font-size: 16px;
+  letter-spacing: 4px;
+  color: #6e774a;
+  font-weight: 300;
+  border: 2px solid #ced6af;
+}
+.footer .form__button {
+  padding: 20px;
+  font-size: 16px;
+  letter-spacing: 4px;
+  color: #6e774a;
+  font-weight: 300;
+  border: 2px solid #ced6af;
+  background: 0;
+  outline: 0;
+}
+
 html, body {
   margin: 0;
   padding: 0;

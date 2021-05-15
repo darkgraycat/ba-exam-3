@@ -654,6 +654,7 @@ template {
 }
 .feautured .slider {
   margin-top: 2rem;
+  overflow-x: hidden;
 }
 .feautured .slider__content {
   margin: 0 -20px;
